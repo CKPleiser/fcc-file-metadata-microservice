@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
      res.sendFile(process.cwd() + '/views/index.html');
   });
 
+// This is just a pointless comment to test Git Flow
 app.post('/api/fileanalyse', upload.single('upfile'), (req, res, next) => {
   const file = req.file;
   if (!file) {
